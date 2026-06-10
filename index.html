@@ -13,66 +13,176 @@
             --brand-gold: #dca732;
             --text-main: #f8fafc;
             --text-muted: #94a3b8;
-            --border-glass: rgba(255, 255, 255, 0.05);
+            --border-glass: rgba(255,255,255,0.05);
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-        body { background: var(--bg-black); color: var(--text-main); line-height: 1.6; }
-        .hero { min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px 20px; background: radial-gradient(circle at center, #111827 0%, var(--bg-black) 100%); }
-        .hero h1 { font-size: 3rem; font-weight: 800; margin-bottom: 20px; }
-        .hero h1 span { color: var(--brand-gold); }
-        .grid-services { max-width: 1200px; margin: 60px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .card { background: var(--bg-surface); border: 1px solid var(--border-glass); padding: 30px; border-radius: 16px; transition: 0.3s; text-decoration: none; color: inherit; display: block; }
-        .card:hover { transform: translateY(-5px); border-color: var(--brand-gold); }
-        .card i { font-size: 2rem; color: var(--brand-gold); margin-bottom: 15px; }
-        .card h3 { font-size: 1.3rem; margin-bottom: 10px; }
-        .card p { color: var(--text-muted); font-size: 0.9rem; }
-        
-        /* Production Global Footer */
-        .production-global-footer { background: var(--bg-surface); border-top: 1px solid var(--border-glass); padding: 40px 20px; text-align: center; margin-top: 100px; }
-        .footer-compliance-links { margin: 15px 0; font-size: 0.85rem; }
-        .footer-compliance-links a { color: var(--text-muted); text-decoration: none; margin: 0 10px; }
-        .footer-compliance-links a:hover { color: #fff; }
-        .btn-wa-global { display: inline-flex; align-items: center; gap: 8px; background: #25D366; color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.9rem; margin-top: 15px; }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: var(--bg-black);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: radial-gradient(circle at center, #111827 0%, var(--bg-black) 100%);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: var(--brand-gold);
+        }
+
+        .grid-services {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-glass);
+            padding: 30px;
+            border-radius: 16px;
+            transition: .3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--brand-gold);
+        }
+
+        .card i {
+            font-size: 2rem;
+            color: var(--brand-gold);
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: .9rem;
+        }
+
+        .production-global-footer {
+            background: var(--bg-surface);
+            border-top: 1px solid var(--border-glass);
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .footer-compliance-links {
+            margin: 15px 0;
+            font-size: .85rem;
+        }
+
+        .footer-compliance-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-compliance-links a:hover {
+            color: #fff;
+        }
+
+        .btn-wa-global {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #25D366;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: .9rem;
+            margin-top: 15px;
+        }
     </style>
 </head>
+
 <body>
 
-    <section class="hero">
-        <h1>ShreeNayra <span>Group</span></h1>
-        <p style="color: var(--text-muted); max-width: 600px; font-size: 1.1rem;">Empowering your growth with high-ticket medical consulting, premium web development, and structural financial assistance.</p>
-    </section>
+<section class="hero">
+    <h1>ShreeNayra <span>Group</span></h1>
 
-    <div class="grid-services">
-        <a href="hair-transplant.html" class="card">
-            <i class="fas fa-user-md"></i>
-            <h3>Hair Transplant</h3>
-            <p>Connect with qualified medical professionals for certified hair restoration diagnostics.</p>
-        </a>
-        <a href="digital-marketing.html" class="card">
-            <i class="fas fa-laptop-code"></i>
-            <h3>Digital Marketing &amp; Web Dev</h3>
-            <p>Premium custom website design, social media setup, and localized business scaling blueprints.</p>
-        </a>
-        <a href="investment.html" class="card">
-            <i class="fas fa-chart-line"></i>
-            <h3>Investment Scenarios</h3>
-            <p>Capital preservation and growth structures customized around your risk profile framework.</p>
-        </a>
+    <p style="color:var(--text-muted);max-width:600px;font-size:1.1rem;">
+        Empowering your growth with high-ticket medical consulting,
+        premium web development, and structural financial assistance.
+    </p>
+</section>
+
+<div class="grid-services">
+
+    <a href="hair-transplant.html" class="card">
+        <i class="fas fa-user-md"></i>
+        <h3>Hair Transplant</h3>
+        <p>Connect with qualified medical professionals for certified hair restoration diagnostics.</p>
+    </a>
+
+    <a href="digital-marketing.html" class="card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Digital Marketing &amp; Web Dev</h3>
+        <p>Premium custom website design, social media setup, and localized business scaling blueprints.</p>
+    </a>
+
+    <a href="investment.html" class="card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Investment Scenarios</h3>
+        <p>Capital preservation and growth structures customized around your risk profile framework.</p>
+    </a>
+
+</div>
+
+<footer class="production-global-footer">
+
+    <p class="copyright-text">
+        &copy; 2026 ShreeNayra Group. All Rights Reserved.
+    </p>
+
+    <div class="footer-compliance-links">
+        <a href="privacy.html">Privacy Policy</a> |
+        <a href="terms.html">Terms &amp; Conditions</a> |
+        <a href="contact.html">Contact Support</a>
     </div>
 
-    <footer class="production-global-footer">
-        <p class="copyright-text">&copy; 2026 ShreeNayra Group. All Rights Reserved.</p>
-        <div class="footer-compliance-links">
-            <a href="privacy.html">Privacy Policy</a> | 
-            <a href="terms.html">Terms &amp; Conditions</a> | 
-            <a href="contact.html">Contact Support</a>
-        </div>
-        <a href="https://wa.me/918882237505" class="btn-wa-global" target="_blank">
-            <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-        </a>
-    </footer>
+    <a href="https://wa.me/918882237505" class="btn-wa-global" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        Chat on WhatsApp
+    </a>
+
+</footer>
+
 <script src="js/app.js"></script>
-</body>
-</html>
+
 </body>
 </html>
